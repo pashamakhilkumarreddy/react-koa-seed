@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec 'npm run lint && node'",
+    "lint": "eslint src/**/*js --fix",
+    "prod": "pm2 start src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pasham Akhil Kumar Reddy",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "pm2": "^4.4.0"
+  }
+}
