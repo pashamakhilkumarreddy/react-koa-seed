@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Routes from './routes';
-import './App.css';
+
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Routes />
-    </div>
+    <Fragment>
+      <Header />
+        <main>
+          <Routes />
+        </main>
+      <Footer />
+    </Fragment>
   );
 }
 
